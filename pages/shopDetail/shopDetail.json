@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "product": "/components/product/product",
+    "shopCar": "/components/shopCar/shopCar",
+    "carModal": "/components/carModal/carModal"
+  },
+  "navigationBarBackgroundColor": "#666",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "肯德基"
+}

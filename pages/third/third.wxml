@@ -1,0 +1,42 @@
+<view class='list'>
+	<form bindsubmit='submitdata'>
+		<view class='item'>
+			<label>联系人:
+				<input value='{{username}}' name='username' type="text" placeholder='请填写收货人的姓名'/>
+			</label>
+		</view>
+		<view class='item'>
+			<radio-group name='sex'>
+				<label>
+					<radio value='先生' checked='{{sex== "先生"}}' ></radio>
+					<text class='title'>先生</text>
+				</label>
+				<label>
+					<radio value='女士' checked='{{sex== "女士"}}' ></radio>
+					<text class='title'>女士</text>
+				</label>
+			</radio-group>
+		</view>
+		<view class='item'>
+			<label>手机号:
+				<input value='{{phone}}' name='phone' type="text" placeholder='请填写收货人手机号码'/>
+			</label>
+		</view>
+		<view class='item'>
+			<label bindtap='Address'>收货地址:
+				<input value='{{shouhuo}}' name='shouhuo' type="text" placeholder='点击选择'/>
+			</label>
+		</view>
+		<view class='item'>
+			<label>门牌号:
+				<input value='{{menpaihao}}' name='menpaihao' type="text" placeholder='详细地址, 例: 16号楼5层301室'/>
+			</label>
+		</view>
+		<view class='item'>
+			<button class='btn' form-type='submit'>保存地址</button>
+		</view>
+	</form>
+		<view class='item'>
+			<button class='del' form-type='submit' bindtap='delete'>删除地址</button>
+		</view>
+</view>

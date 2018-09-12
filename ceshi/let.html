@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>template string</title>
+</head>
+	<div id="list"></div>
+<body>
+	<script type="text/javascript">
+		//获取元素
+		var list = document.getElementById("list");
+		var str = "hello world";
+		list.innerHTML = (`
+			<ul>
+				<li>${str}</li>
+			</ul>
+		`).trim();
+	</script>
+</body>
+</html>

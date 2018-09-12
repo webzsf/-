@@ -1,0 +1,35 @@
+.header {
+	border-top: 0.5rpx solid #efefef;
+	border-bottom: 0.5rpx solid #efefef;
+	padding: 20rpx ;
+	position: relative;
+}
+.header .address {
+	font-size: 32rpx;
+	padding-right: 50rpx;
+}
+.header .shouhuo {
+	margin-right: 16rpx;
+}
+.header .info {
+	font-size: 24rpx;
+	margin-top: 10rpx;
+	color: #ADA9A9;
+}
+.header .username, .sex, .phone {
+	margin-right: 30rpx;
+}
+.header image {
+	width: 30rpx;
+	height: 30rpx;
+}
+.header .tp {
+	position: absolute;
+	right: 20rpx;
+	top: 43rpx;
+}
+.btn {
+	position: fixed;
+	width: 100%;
+	bottom: 0rpx;
+}

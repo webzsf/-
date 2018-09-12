@@ -1,0 +1,27 @@
+.content {
+  display: flex;
+}
+.reduce, .add {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 50rpx;
+  font-weight: bold;
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 36rpx;
+  text-align: center;
+  border-radius: 25rpx;
+}
+.add{
+  background-color: gold;
+  border: 2rpx solid gold;
+}
+.reduce{
+  color: #ccc;
+  background-color: #fff;
+  border: 2rpx solid #ccc;
+}
+.num {
+  margin: 0 30rpx;
+  font-weight: bold;
+}

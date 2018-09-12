@@ -1,0 +1,28 @@
+<view class="list">
+	<view class="item" wx:for="{{list}}" wx:key="this">
+        <view class='list_wrrap'>
+            <view class='list_img'>
+                <image src='https://localhost:/{{item.icon}}'></image>
+            </view>
+            <view class="list_content">
+                <view class="title">
+                    <text class='name'>{{item.title}}</text>
+                    <text class="state">{{item.state}}</text>
+                </view>
+                <view class='info_wrrap'>
+                    <view class="info" wx:for="{{item.info}}" wx:key="this" wx:for-item="order" wx:for-index="oindex">
+                        <text class="name">{{order.name}}</text>
+                        <text class="num">x{{order.num}}</text>
+                    </view>
+                </view>
+                <view class='price_num'>
+                    <text class='num'>共{{item.mount}}件商品,</text>
+                    <text class="price">实付￥{{item.price}}</text>
+                </view>
+            </view>
+        </view>      
+        <view class="btn">
+            <text class="again">再来一单</text>
+        </view>
+	</view>
+</view>

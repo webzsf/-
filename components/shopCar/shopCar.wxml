@@ -1,0 +1,5 @@
+<view class='car-content'>
+  <image src="/images/购物车.png" bindtap='popModal'></image>
+  <view hidden="{{num <= 0}}" class='car-num'>{{num}}</view>
+</view>
+

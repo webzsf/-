@@ -1,0 +1,50 @@
+page {
+	background-color: #F4F4F4;
+}
+.inputSome {
+	background-color: #fff;
+	padding: 20rpx 0rpx;
+}
+.box {
+	width: 92%;
+	position: relative;
+	margin: 20rpx auto;
+}
+textarea {
+	border: 2rpx solid #ccc;
+	width: 100%;
+	background-color:#F4F4F4;
+	padding: 6rpx;
+	font-size: 27rpx;
+	
+}
+.number {
+	position: absolute;
+	right: 22rpx;
+	bottom:20rpx;
+	font-size: 28rpx;
+
+}
+.somes {
+	width: 92%;
+	margin: 0 auto;
+}
+
+.somes-item {
+	display: inline-block;
+	margin: 0rpx 6rpx 28rpx 6rpx;
+	font-size: 28rpx;
+	border:1px solid #ccc;
+	padding: 10rpx 16rpx;
+}
+.somes-item:first-child,.somes-item:last-child{
+	margin-left: 0rpx;
+}
+.btn {
+	padding-top:40rpx; 
+}
+.submit-btn {
+	width: 90%;
+	margin: 0 auto;
+	background-color: #FFD161;
+}

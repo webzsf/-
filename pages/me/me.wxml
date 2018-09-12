@@ -1,0 +1,19 @@
+<view class="wode">  
+  <view class="hd">
+      <view class="tx"><open-data type="userAvatarUrl"></open-data></view>
+      <view class="dl" id="dl"><open-data type="userNickName" lang="zh_CN"></open-data></view>
+      <view class="zc">132****1010</view>
+  </view>
+  <view class="bd">
+    <view class="hb"><image src='../../images/hb.jpg'></image>美团红包<view class="jt">></view></view>
+    <view class="dz" catchtap='clickAddress'><image src='../../images/dw.jpg'></image>我的地址<view class="jt">></view></view>
+    <view class="yq" catchtap='clickShare'><image src='../../images/lw.jpg'></image>邀请有奖<view class="jt">></view></view>
+    <view class="kf" catchtap="clicktel">
+      <view class="wz"><image src='../../images/dh.jpg'></image>客服电话</view>
+      <view class="hm">101-097-77</view>
+      <view class="sj">9:00-23:00</view>
+      <view class="jt">></view>
+    </view>
+    <view class="tc" catchtap='clicktuichu'>退出账号</view>
+  </view>
+</view>

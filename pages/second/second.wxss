@@ -1,0 +1,42 @@
+.list {
+	padding: 0rpx 20rpx;
+}
+.item {
+    border-bottom: 2rpx solid #efefef;
+    margin: 10rpx;
+   	font-size: 32rpx;
+}
+.list .item label {
+	display: inline-block;
+    vertical-align: middle;
+	height: 80rpx;
+	line-height: 80rpx;
+	display: flex;
+}
+.list .item input {
+	display: inline-block;
+    vertical-align: middle;
+    font-size: 28rpx;
+    margin-left: 60rpx;
+    height: 80rpx;
+	line-height: 80rpx;
+    flex: 1;
+}
+.item radio-group {
+	text-align: center;
+	display: flex;
+}
+.item radio-group label{
+	margin: 0 auto;
+
+}
+.item radio-group label text {
+	margin-left: 10rpx;
+	margin-right: 50rpx;
+	font-size: 32rpx;
+    vertical-align: middle;
+}
+.btn {
+	background-color: gold;
+	margin-top: 40rpx;
+}

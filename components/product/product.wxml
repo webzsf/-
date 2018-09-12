@@ -1,0 +1,11 @@
+<view class="product-item">
+  <image src="https://localhost/images/item/{{product.img}}"></image>
+  <view class="content">
+    <view class='title'>{{product.title}}</view>
+    <view class='sales'>已售{{product.sales}}份</view>
+    <view class='intro'>
+      <view class='price'>￥{{product.price}}</view>
+      <modifier num="{{product.num}}" typeId="{{typeId}}" productId="{{product.id}}" bind:numEvent="onNumEvent"></modifier>
+    </view>
+  </view>
+</view>

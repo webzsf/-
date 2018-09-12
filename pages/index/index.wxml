@@ -1,0 +1,128 @@
+<view class="{{showView?'tripList_root':''}}">
+	<view class="header">
+	<view class="serach-address" bindtap="intoSearch">
+    <input placeholder="请输入收货地址" value="{{searchCity}}"></input>
+  </view>
+	
+  <view class="search-btn">
+    <image src="https:localhost/images/icons/serach.png"></image>
+    <input placeholder="炸鸡"></input>
+  </view>
+</view>
+<swiper class="categoryList" indicator-dots="true" 
+  indicator-color="rgba(228,228,228,1)" 
+  indicator-active-color="#FECA49">
+    <block wx:for="{{categoryList}}" wx:key="this">
+    <swiper-item>
+    <block wx:for="{{item}}" wx:key="this">
+      <view class="category-info">
+        <image src="{{item.src}}" 
+        class="category-image"></image>
+        <view class="category-text">{{item.name}}</view>
+      </view>
+    </block>
+    </swiper-item>
+    </block>
+</swiper>
+<image class="hongbao" src="https:localhost/images/item/hongbao.jpg"></image>
+<view class="main" bindtap='changeViewId'>
+	<view class="fujin">
+		<!-- <image src="localhost:/images/item/heng1.png"></image> -->
+		<text>附近商家</text>
+	</view>
+	<view class="sort1">
+			<text>综合排序</text>
+			<text>销量最高</text>
+			<text>速度最快</text>|
+			<text bindtap="intoMask">筛选</text>
+	</view>
+	<view class="sort2" bindtap='changeViewId'>
+			<text>满减优惠</text>
+			<text>点评高分</text>
+			<text>美团专送</text>
+			<text>品牌商家</text>
+	</view>
+	<view class="part" wx:for="{{list}}" wx:key="this" id="haha{{item.id}}" catchtap='linkShopDetail'>
+				<image src="{{item.src}}"></image>
+				<view class="content">
+					<view class="item-title">{{item.name}}</view>
+					<view class="score">
+						<view class="item-star">评分{{item.star}}分</view>
+					<view class="sealed">月售{{item.sales}}</view>
+					</view>
+					<view class="item-info">
+						<text class="initial_price">起送￥{{item.initial_price}}</text>
+						<text class="distribution_price">配送￥{{item.distribution_price}}</text>
+					</view>
+				</view>
+				<view class="distance">
+					<text class="time">{{item.time}}分钟</text> |
+					<text class="distance">{{item.distance}}</text>
+				</view>
+			
+	</view>
+</view>
+
+<view  catchtouchmove="stoppro" class="mask" hidden="{{mask}}" style="height:{{height}}px;background-color:rgba(0,0,0,.3);">
+<view class="top">
+	<view class="fix">
+		<view class="mask-search-btn">
+    		<image src="https:localhost/images/icons/serach.png"></image>
+    		<input placeholder="麻辣烫"></input>
+ 		</view>
+	<view class="sort1">
+		<text>综合排序</text>
+		<text>销量最高</text>
+		<text>速度最快</text>|
+		<text bindtap="select">筛选</text>
+	</view>
+	</view>
+	<scroll-view  scroll-y class="mid" style="height:500rpx">
+		<view class="first">
+			<view class="title">商家特色(可多选)</view>
+		<view class="slecet1">			
+			<text>美团专送</text>
+			<text>到店自取</text>
+			<text>点评高分</text>
+			<text>品牌商家</text>
+			<text>免配送费</text>
+			<text>新商家</text>
+			<text>0元起送</text>
+			<text>跨天预订</text>
+			<text>货到付款</text>
+		</view>
+		</view>
+		<view class="second">
+			<view class="title">人均价</view>
+		<view class="slecet2">
+			
+			<text>20元以下</text>
+			<text>20-40元</text>
+			<text>40元以上</text>
+		
+		</view>
+		</view>
+		<view class="three">
+			<view class="title">优惠活动(可多选)</view>
+		<view class="slecet3">
+			<text>满减优惠</text>
+			<text>进店领取</text>
+			<text>折扣商品</text>
+			<text>门店新客立减</text>
+			<text>首单立减</text>
+			<text>满赠活动</text>
+			<text>满返代金券</text>
+			<text>减配送费</text>
+			<text>买赠活动</text>
+			<text>提前下单优惠</text>
+		</view>
+		</view>
+	</scroll-view>
+	<view class="btn">
+		<view class="left" catchtap="intoIndex">清空</view>
+		<view class="right" catchtap="intoIndex">完成</view>
+	</view>
+
+</view>
+</view>
+</view>

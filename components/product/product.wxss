@@ -1,0 +1,29 @@
+.product-item {
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  margin-left: 20rpx;
+  padding: 20rpx 20rpx 20rpx 0;
+  border-bottom: 2rpx solid #c7c7c7;
+}
+.product-item image {
+  width: 120rpx;
+  height: 120rpx;
+}
+.content {
+  flex: 1;
+  margin-left: 20rpx;
+}
+.sales {
+  font-size: 28rpx;
+  color: #999;
+  padding: 4rpx 0;
+}
+.intro {
+  display: flex;
+  justify-content: space-between;
+  font-size: 36rpx;
+}
+.intro .price{
+  color: #fe2947;
+}

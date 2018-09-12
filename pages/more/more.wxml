@@ -1,0 +1,14 @@
+
+<view class="inputSome">
+	<view class="box">
+		<textarea maxlength="50" show-confirm-bar="true" auto-focus="true" class="infoLike" value="{{para}}"  bindinput='bindWordLimit' placeholder="请输入备注，最多50个字哦"></textarea>
+		<view class="number">{{number}} / 50</view>
+	</view>
+	<view class="somes">
+		<text data-id="{{index}}" wx:for="{{hobby}}" wx:key="this" class="somes-item" bindtap="checkedCur">{{item}}</text>
+	</view>
+</view>
+<view class="btn">
+	<button class="submit-btn" bindtap="gotoOrder" formType="submit">完成</button>
+</view>
+

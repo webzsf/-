@@ -1,0 +1,117 @@
+{
+  "success": true,
+  "data": {
+    "restaurant": [
+       {
+        "id": "01",
+        "name": "肯德基",
+        "star": 3.4,
+        "sales": 58,
+        "src": "https://localhost/images/item/kende.png",
+        "initial_price": 63,
+        "distribution_price": 0,
+        "distance": "6.3km",
+        "time": 34
+      },
+       {
+        "id": "02",
+        "name": "王婆大虾",
+        "star": 4.6,
+        "sales": 78,
+        "src": "https://localhost/images/item/wangpo.png",
+        "initial_price": 62,
+        "distribution_price": 0,
+        "distance": "3.1km",
+        "time": 12
+      },
+       {
+        "id": "03",
+        "name": "火炉火烤肉",
+        "star": 3.8,
+        "sales": 66,
+        "src": "https://localhost/images/item/huolu.png",
+        "initial_price": 63,
+        "distribution_price": 0,
+        "distance": "8.9km",
+        "time": 65
+      },
+      {
+        "id": "04",
+        "name": "御膳房",
+        "src": "https://localhost/images/item/yushan.png",
+        "star": 4.5,
+        "sales": 641,
+        "initial_price": 0,
+        "distribution_price": 0,
+        "distance": "156m",
+        "time": 33
+      },
+      {
+        "id": "05",
+        "name": "韩式炸鸡啤酒屋",
+        "star": 4.5,
+        "sales": 731,
+        "src": "https://localhost/images/item/hanshi.png",
+        "initial_price": 15,
+        "distribution_price": 0,
+        "distance": "1.3km",
+        "time": 52
+      },
+      {
+        "id": "06",
+        "name": "正新鸡排",
+        "star": 5,
+        "sales": 1161,
+        "src": "https://localhost/images/item/zhengxin.png",
+        "initial_price": 20,
+        "distribution_price": 0,
+        "distance": "1.5km",
+        "time": 30
+      },
+      {
+        "id": "07",
+        "name": "板凳烧烤",
+        "star": 4,
+        "sales": 330,
+        "src": "https://localhost/images/item/bandeng.png",
+        "initial_price": 50,
+        "distribution_price": 3,
+        "distance": "3.3km",
+        "time": 56
+      },
+      {
+        "id": "08",
+        "name": "味多美炸鸡汉堡",
+        "src": "https://localhost/images/item/weiduo.png",
+        "star": 0,
+        "sales": 39,
+        "initial_price": 35,
+        "distribution_price": 3,
+        "distance": "3.1km",
+        "time": 44
+      },
+      {
+        "id": "09",
+        "name": "精武鸭脖",
+        "star": 0,
+        "sales": 24,
+        "src": "https://localhost/images/item/yabo.png",
+        "initial_price": 30,
+        "distribution_price": 1,
+        "distance": "2.6km",
+        "time": 44
+      },
+      {
+        "id": "10",
+        "name": "榴芒先生",
+        "star": 4.5,
+        "sales": 37,
+        "src": "https://localhost/images/item/liumang.png",
+        "initial_price": 58,
+        "distribution_price": 0,
+        "distance": "6.8km",
+        "time": 49
+      }
+    ]
+  }
+}

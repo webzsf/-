@@ -1,0 +1,86 @@
+page {
+    background: #eee;
+}
+.item {
+    margin-top: 10px;
+    padding-top: 10px;
+    background: #fff;
+    
+}
+.item .list_wrrap {
+    display: flex;
+    padding: 0 14px;
+}
+.item .list_img image {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50rpx;
+}
+.item .list_content {
+    flex: 1;
+    padding: 0 0px 0px 10px;
+}
+.item .list_content .title {
+    font-size: 36rpx;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    height: 48px;
+    line-height: 48px;
+    display: flex;
+}
+.item .list_content .title .name {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: hidden;
+}
+.item .list_content .title .state {
+    float: right;
+    font-size: 32rpx;
+    font-weight: normal;
+    color: #666;
+    width: 25%;
+    text-align: right;
+}
+.item .list_content .info_wrrap {
+    padding: 36rpx 0;
+}
+.item .list_content .info {
+    
+    font-size: 32rpx;
+    color: #666;
+    line-height: 54rpx;
+    overflow: hidden;
+}
+.item .list_content .info .name {
+    float: left;
+    display: block;
+}
+.item .list_content .info .num {
+    float: right;
+    display: block;
+}
+.price_num {
+    text-align: right;
+    font-size: 28rpx;
+}
+.price_num .num {
+    margin-right: 10rpx;
+}
+.price {
+    color: #fe2947;
+    
+}
+.item .btn {
+    width: 100%;
+    text-align: right;
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+}
+.again {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 30rpx;
+    display: inline-block;
+    margin: 10px 14px;
+}

@@ -1,0 +1,5 @@
+<view class='content'>
+  <view data-typeId="{{typeId}}" data-productId='{{productId}}' hidden="{{num <= 0}}" class='reduce' catchtap='reduceNum'>-</view>
+  <view hidden='{{num <= 0}}' class='num'>{{num}}</view>
+  <view data-typeId="{{typeId}}" data-productId='{{productId}}' class='add' catchtap='addNum'>+</view>
+</view>

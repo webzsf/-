@@ -1,0 +1,46 @@
+<view class="header">
+    <text class="choose-city" bindtap="chooseCity">{{chooseCity}}</text>
+    <view class="search">
+      <image src="https:localhost/images/icons/serach.png"></image>
+      <input placeholder="请输入收货地址" bindinput="input" ></input> 
+    </view>
+</view>
+
+<scroll-view scroll-y style='height: {{height-60}}px;' hidden="{{hidden1}}" >
+  <view class="mid">
+    <text class="address">{{address}}</text>
+    <text class="location" bindtap="getAdd" >重新定位</text>
+  </view>
+  <view class="fjdz">附近地址</view>
+    <block wx:for="{{menu}}" wx:key="this">
+      <view class="item-part" bindtap="backIndex" id="{{item.city}}">{{item.city}}</view>
+     </block>
+</scroll-view>
+
+<view class="cityList" hidden="{{hidden2}}">
+  <view class="current">
+    <text>当前定位城市</text> {{currentCity}}
+  </view>
+  <view class='search-letter' catchtouchmove='moveToggleLetter'>
+    <view class="letter" style='height: {{letterHeight}}px; line-height: {{letterHeight}}px;' wx:for="{{searchLetter}}" wx:key="{{index}}" bindtouchstart='toggleLetter' data-letter="{{item}}">{{item}}</view>
+  </view>
+    <scroll-view scroll-y scroll-into-view="{{chooseLetter}}" style='height: {{height-60}}px;'>
+        <block wx:for="{{cityList}}" wx:key="this">
+          <view class='item-part2' id="{{item.initial}}">
+            <view class='item-title'>{{item.initial}}</view>
+            <view class='item-city' wx:for="{{item.cityInfo}}" wx:for-item="cityItem" wx:key="this" catchtap='chooseCityMethod' data-city="{{cityItem.city}}">{{cityItem.city}}</view>
+        </view>
+        </block>
+    </scroll-view>
+  
+</view>
+
+
+  
+
+
+
+
+ 
+
+

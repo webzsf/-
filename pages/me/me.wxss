@@ -1,0 +1,140 @@
+page {
+  background-color: #eee;
+}
+.wode {
+  width: 100%;
+  position: relative;
+}
+.wode .hd {
+  width: 100%;
+  height: 160rpx;
+  background-color: rgb(255, 208, 52);
+  padding-top: 30rpx;
+}
+.wode .hd .tx {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  margin-left: 20rpx;
+  float: left;
+  overflow: hidden;
+}
+.wode .hd .tx image {
+  width: 150rpx;
+  height: 140rpx;
+}
+.wode .hd .dl {
+  font-size: 34rpx;
+  position: absolute;
+  top: 25rpx;
+  left: 150rpx;
+  line-height: 120rpx;
+  padding-left: 30rpx;
+}
+.wode .hd .zc {
+  position: absolute;
+  font-size: 26rpx;
+  left: 180rpx;
+  top: 115rpx;
+}
+.wode .bd {
+  width: 100%;
+  height: 530rpx;
+  margin-top: 20rpx;
+  background-color: #fff;
+  font-size: 16px;
+}
+.wode .bd .hb image {
+  width: 38rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 18rpx;
+  top: 24rpx;
+}
+.wode .bd .dz image {
+  width: 38rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 18rpx;
+  top: 24rpx;
+}
+.wode .bd .yq image {
+  width: 38rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 18rpx;
+  top: 24rpx;
+}
+.wode .bd .kf image {
+  width: 38rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 18rpx;
+  top: 24rpx;
+}
+.wode .bd .hb {
+  width: 100%;
+  height: 72rpx;
+  padding-left: 70rpx;
+  padding-top: 20rpx;
+  padding-bottom: 4rpx;
+  border-bottom: 4rpx solid #eee;
+  position: relative;
+}
+.wode .bd .jt {
+  position: absolute;
+  right: 80rpx;
+  top: 21rpx;
+}
+.wode .bd .dz {
+  width: 100%;
+  height: 72rpx;
+  padding-left: 70rpx;
+  padding-top: 20rpx;
+  padding-bottom: 4rpx;
+  border-bottom: 4rpx solid #eee;
+  position: relative;
+}
+.wode .bd .yq {
+  width: 100%;
+  height: 72rpx;
+  padding-left: 70rpx;
+  padding-top: 20rpx;
+  padding-bottom: 4rpx;
+  border-bottom: 4rpx solid #eee;
+  position: relative;
+}
+.wode .bd .kf {
+  width: 100%;
+  height: 72rpx;
+  padding-left: 70rpx;
+  padding-top: 20rpx;
+  padding-bottom: 4rpx;
+  border-bottom: 30rpx solid #eee;
+  float: left;
+  position: relative;
+}
+.wode .bd .kf .wz {
+  float: left;
+  line-height: 44rpx;
+}
+.wode .bd .kf .hm {
+  float: left;
+  font-size: 26rpx;
+  color: rgb(255, 206, 43);
+  line-height: 52rpx;
+  padding-left: 10rpx;
+}
+.wode .bd .kf .sj {
+  float: left;
+  font-size: 28rpx;
+  color: rgba(15, 13, 13, 0.308);
+  line-height: 52rpx;
+  padding-left: 140rpx;
+}
+.wode .bd .tc {
+  width: 100%;
+  height: 72rpx;
+  padding-left: 306rpx;
+  padding-top: 158rpx;
+}

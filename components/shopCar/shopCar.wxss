@@ -1,0 +1,29 @@
+.car-content {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -20rpx;
+  margin: 0 30rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  background-color: gold;
+  z-index: 8;
+}
+image {
+  width: 84rpx;
+  height: 84rpx;
+}
+.car-num {
+  position: absolute;
+  right: -5rpx;
+  top: 0;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  background: #fe2947;
+  color: #fff;
+  font-size: 30rpx;
+}

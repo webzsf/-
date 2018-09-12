@@ -1,0 +1,15 @@
+<view class='header'>
+	<view class='address'>
+		<p class='shouhuo'>{{shouhuo}}</p>
+		<p class='menpaihao'>{{menpaihao}}</p>
+	</view>
+	<view class='info'>
+		<p class='username'>{{username}}</p>
+		<p class='sex'>{{sex}}</p>
+		<p class='phone'>{{phone}}</p>
+	</view>
+	<view class='tp' bindtap='amend'>
+		<image src='../../images/a.png'></image>
+	</view>
+</view>
+<button class='btn' bindtap='btn'>新增收货地址</button>

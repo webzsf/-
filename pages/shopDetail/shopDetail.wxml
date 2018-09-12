@@ -1,0 +1,68 @@
+<!-- 商铺头部 -->
+<view class='header'>
+  <image class="shop-logo" src="/images/02.jpg"></image>
+  <view class='shop-info' catchtap='toggleMore'>
+    <view class='shop-info-top'>
+      <text class='top-item'>起送 ￥{{qisong}}</text>|
+      <text class='top-item'>{{minutes}}分钟</text>|
+      <text class='top-item'>{{distance}}m</text>
+    </view>
+    <view class='shop-info-center'>
+      公告： {{message}}
+    </view>
+    <view class='shop-info-bottom'>
+      <image class="discount-icon" src="/images/折扣卡.png"></image>
+      <view class="discount-content">折扣满5折起</view>
+      <view class="arrow">＞</view>
+    </view>
+  </view>
+  <view class='fixed-info' hidden='{{isHeaderHide}}'>
+    <view class='fixed-info-item fixed-info-top'>
+      <view class='fixed-info-top-item' wx:for="{{discount}}" wx:key="this">
+        <image src='/images/折扣卡.png'></image>
+        <text>{{item.text}}</text>
+      </view>
+    </view>
+    <view class='fixed-info-item'>
+      <view class='fixed-item-title'>配送</view>
+      <view class='fixed-item-text fixed-info-send'>
+        <text class='top-item'>起送 ￥{{qisong}}</text>|
+        <text class='top-item'>{{minutes}}分钟</text>|
+        <text class='top-item'>{{distance}}m</text>
+      </view>
+      <view class='fixed-item-text'>配送时间： {{time}}</view>
+    </view>
+    <view class='fixed-info-item'>
+      <view class='fixed-item-title'>公告</view>
+      <view class='fixed-item-text'>{{message}}</view>
+    </view>
+  </view>
+</view>
+<!-- 商铺内容 -->
+<view class="shop-part">
+  <scroll-view class="shop-type-part" scroll-y scroll-into-view="type{{chooseType}}" scroll-with-animation="true" style="height: {{scrollViewHeight}}px">
+      <view class='shop-type-item {{item.typeChoosed}}' wx:for="{{list}}" wx:key="this" id="type{{item.id}}" data-typeId="{{item.id}}" catchtap='chooseTypeFn'>{{item.text}}<view hidden='{{item.choosedNum == 0}}' class="type-num">{{item.choosedNum}}</view>
+      </view>
+  </scroll-view>
+  <scroll-view class="shop-products-part" scroll-y scroll-into-view="type{{chooseType}}" scroll-with-animation="true" style="height: {{scrollViewHeight}}px">
+    <view wx:for="{{list}}" wx:key="this" id='type{{item.id}}'>
+      <product wx:for="{{item.data}}" wx:for-item="product" wx:key="this" product="{{product}}" typeId="{{item.id}}" bind:numEvent="onNumEvent"></product>
+    </view>
+  </scroll-view>
+</view>
+<!-- 购物车 -->
+<view class='shop-car-part'>
+    <carModal hide="{{isMask}}" chooseProductsNum="{{chooseProductsNum}}" chooseProducts="{{chooseProducts}}" bind:numEvent="onNumEvent" bind:clearCar="onclearCar"></carModal>
+    <view class='totalPrice'>
+      <shopCar num="{{chooseProductsNum}}" bind:popModal="popModalEvent"></shopCar>
+      <view class='hasprice' wx:if="{{totalPrice > 0}}">
+        <view class='price'>￥ {{totalPrice}}</view>
+        <view>另需配送费￥9</view>
+      </view>
+      <view wx:else>另需配送费￥9</view>
+    </view>
+    <view class='buy' catchtap='skipOrderDetail' wx:if="{{totalPrice > 0}}">去结算</view>
+    <view class='nobuy' wx:else>去购买</view>
+  </view>
+<!-- 遮罩 -->
+<view hidden='{{isMask}}' catchtap='toggleMask' class="mask"></view>

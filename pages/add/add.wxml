@@ -1,0 +1,43 @@
+<view class="credit">
+	<form bindsubmit="submitData">
+		<view class="item">
+			<label>
+                联系人：
+				<input value='{{username}}' type="text" placeholder='请填写收货人的姓名' name="username"/>
+			</label>
+		</view>
+		<view class="sex">
+			<radio-group bindchange="radioChange">
+				<label>
+					<radio value="男士"></radio>
+					先生
+				</label>
+				<label>
+					<radio value="女士"></radio>
+					女士
+				</label>
+			</radio-group>
+		</view>
+		<view class="item">
+			<label>
+                手机号：
+				<input value='{{tel}}' type="text" placeholder='请输入手机号' name="tel"/>
+			</label>
+		</view>
+		<view class="item">
+			<label>
+                收获地址：
+				<input value='{{address}}' type="text" placeholder='请输入地址' name="address" bindtap='getNewAddress'/>
+			</label>
+		</view>
+		<view class="item">
+			<label>
+                门牌号：
+				<input value='{{mph}}' type="text" placeholder='详细地址,例:16号楼5层301室' name="mph"/>
+			</label>
+		</view>
+		<view class="btns">
+			<button class='submit-btn' form-type='submit'>保存地址</button>
+		</view>
+	</form>
+</view>

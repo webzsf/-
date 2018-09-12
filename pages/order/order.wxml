@@ -1,0 +1,74 @@
+<view class="header">
+	<!-- 新增地址 -->
+	<view class="newAddress" bindtap="addNewAddress">
+		<view wx:if="{{isShow}}" class="addBtn">
+				<text class="add">+</text> 新增收获地址
+		</view>
+		<view wx:else class="addAddress">
+			<image class="dwicon" src="https://localhost/images/item/定位.png"></image>
+			<view>{{address}}</view>
+			<view class="addAddress-info">
+				<text>{{username}}</text>
+				<text class="sex">{{sex}}</text>
+				<text>{{tel}}</text>
+			</view>
+		</view>
+	</view>
+
+	<!-- 送达时间 -->
+	<view class="line"></view>
+	<view class="deliveryTime">
+		<icon type="waiting" color="#565656" class="icon" size="20"></icon>
+		<text class class="go">立即送出</text>
+		<text class="arriveTime">大约{{time}}送达</text>
+	</view>
+</view>
+<!-- 订单列表 -->
+<view class="card">
+	<view class="title">
+		<image src="https://localhost/images/item/seller.jpg"></image>
+		<text class="seller-name">{{seller.name}}</text>
+		<text class="sjzp">商家自配</text>
+	</view>
+	<view class="list">
+		<view class="item" wx:for="{{list}}" wx:key="this">
+			<image class="item-image" src="https://localhost/images/item/{{item.img}}"></image>
+			<view class="item-right">
+				<view class="item-title">{{item.title}}</view>
+				<view class="danwei">+份</view>
+				<view class="item-num">×{{item.num}}</view>
+				<view class="item-price">￥{{item.price}}</view>
+			</view>
+		</view>
+	</view>
+<!-- other -->
+	<view class="otherPrice">
+		<view class="top">
+			<view class="bzf">包装费<text>￥0</text></view>	
+			<view class="psf">配送费<text>￥9</text></view>	
+		</view>
+		<view class="bottom">
+			<view>美团红包<text>暂无可用 ></text></view>
+			<view class="djq">商家代金券<text>暂无可用 ></text></view>
+		</view>
+		<view class="xiaoji">小计<text class="stc">￥{{wholePrice}}</text></view>
+	</view>
+</view>
+
+<!-- info -->
+<view class="info">
+	<view class="payWay">
+		<text class="left">支付方式</text>
+		<text class="right">在线支付</text>
+	</view>
+	<view class="remark">
+		<text class="left">备注</text>
+		<text class="right" bindtap="chooseLike">{{like}} ></text>
+	</view>
+	<view class="tablewareNum">
+		<text class="left">餐具数量</text>
+		<text class="right" bindtap="showTablewareNum">{{chooseTableware}} ></text>
+	</view>
+</view>
+<!-- 支付 -->
+<button class="submit-btn" type="primary" bindtap="intoMessagePage">微信支付<text>￥{{wholePrice}}</text></button>

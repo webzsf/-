@@ -1,0 +1,235 @@
+page {
+	background-color: #F4F4F4;
+
+}
+.header {
+	height: 260rpx;
+  	margin: 16rpx 14rpx;
+ 	padding: 30rpx 10rpx 6rpx 20rpx;
+	background-color: #fff;
+}
+.newAddress {
+ 
+  text-align: center;
+  color: #FDB103;
+  font-size: 30rpx;
+  height: 100rpx;
+
+}
+.addBtn {
+	margin: 0 auto;
+	height: 80rpx;
+  	width: 436rpx;
+ 	line-height: 80rpx;
+ 	border-radius: 80rpx;
+   	border: 1px solid #FDB103;
+   	position: relative;
+}
+.addAddress {
+	color: black;
+	text-align: left;
+	font-size: 32rpx;
+	padding-left: 65rpx;
+	position: relative;
+}
+.dwicon {
+	width: 60rpx;
+	height: 60rpx;
+	position: absolute;
+	top: 14rpx;
+	left: -9rpx;
+}
+.addAddress-info {
+	line-height: 50rpx;
+	font-size: 27rpx;
+	color:#666;
+}
+.sex {
+	margin: 0rpx 8rpx;
+}
+.add {
+	position: absolute;
+	top: -6rpx;
+	left: 86rpx;
+	font-weight: bold;
+	font-size: 44rpx;
+	vertical-align:middle;
+}
+.line {
+	margin: 40rpx 0rpx;
+	border-bottom: 2rpx solid #E4E4E4;
+}
+.deliveryTime {
+	height: 80rpx;
+
+}
+.icon {
+	vertical-align: middle;
+}
+.go {
+	margin: 0rpx 20rpx;
+	font-size: 34rpx;
+	
+}
+.arriveTime {
+	color:#1F90EE;
+	font-size: 28rpx;
+}
+.card {
+	margin: 0 14rpx;
+
+}
+.title {
+	background-color: #FFFFFF;
+	height: 80rpx;
+	font-size: 28rpx;
+	line-height: 80rpx;
+	padding-left: 6rpx;
+	display: flex;
+	position: relative;
+
+}
+.card .title image{
+	width: 50rpx;
+	height: 34rpx;
+	position: relative;
+	top: 21rpx;
+	left: 0rpx;
+	
+}
+.card .title .seller-name {
+	color:#666;
+	flex: 1;
+	margin-left: 6rpx;
+
+
+}
+.sjzp{
+	font-size: 18rpx;
+	display: inline-block;
+	height: 18rpx;
+	text-align: center;
+	line-height: 18rpx;
+	padding: 4rpx 8rpx;
+	border: 2rpx solid #363636;
+	position: absolute;
+	top: 30rpx;
+	right: 20rpx;
+}
+.list {
+	background-color: #fff;
+}
+.list .item {
+	display: flex;
+	padding: 10rpx 20rpx 10rpx 20rpx;
+	background-color: #F8F8F8;
+	margin-bottom: 10rpx;
+
+}
+.item-right {
+	position: relative;
+	flex: 1;
+	padding-left: 20rpx;
+}
+.item-image {
+	width: 100rpx;
+	height: 100rpx;
+}
+.item-title {
+	font-size: 27rpx;
+}
+.item-num, .danwei{
+	color:#989898;
+	font-size: 27rpx;
+}
+.item-price {
+	position: absolute;
+	top: 2rpx;
+	right: 0rpx;
+	font-size: 27rpx;
+}
+.otherPrice {
+	background-color: #fff;
+	font-size: 27rpx;
+	/* padding-left: 6rpx;	
+	padding-right: 20rpx;
+	padding-bottom: 70rpx; */
+	padding: 0rpx 20rpx 70rpx 20rpx; 
+}
+.otherPrice text {
+	float: right;
+}
+.otherPrice .top view{
+	height: 70rpx;
+	line-height: 70rpx;
+}
+.psf,.djq{
+	border-bottom:1px dashed #DBDBDB;
+}
+.otherPrice .bottom view {
+	height: 70rpx;
+	line-height: 70rpx;
+}
+.xiaoji {
+	float: right;
+	height: 70rpx;
+	line-height: 70rpx;
+}
+.xiaoji .stc {
+	color:#FF5144;
+	margin-left: 10rpx;
+}
+.info {
+	margin: 10rpx 16rpx;
+	background-color: #fff;
+	font-size: 27rpx;
+	padding: 0rpx 20rpx;
+	
+}
+.info text {
+	height: 70rpx;
+	line-height: 70rpx;
+}
+.payWay {
+	overflow: hidden;
+	border-bottom: 2rpx solid #DBDBDB;
+}
+.payWay .left {
+	float: left;
+}
+.payWay .right {
+	float: right;
+}
+.remark {
+	overflow: hidden;
+	border-bottom: 2rpx solid #DBDBDB;
+}
+.remark .left {
+	float: left;
+}
+.remark .right {
+	width: 300rpx;
+	float: right;
+	text-align: right;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+}
+.tablewareNum {
+	overflow: hidden;
+}
+.ptablewareNum .left {
+	float: left;
+}
+.tablewareNum .right {
+	float: right;
+}
+.submit-btn {
+	margin-top: 20rpx;
+	border-radius: 0rpx;
+	font-size: 40rpx;
+}
+.submit-btn text {
+	font-weight: bold;
+}

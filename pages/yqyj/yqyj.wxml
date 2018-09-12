@@ -1,0 +1,24 @@
+<view class="bjt">
+  <image src='../../images/beijing.jpg'></image>
+</view>
+<button class="ljyq" open-type="share">立即邀请</button>
+<view class="mdmyq">面对面邀请</view>
+<view class="jishu">
+  <view class="js1">
+    <view class="j1">0</view><view class="j2">元</view><view class="j3">红包在路上</view>
+  </view>
+  <view class="js2">
+    <view class="j1">0</view><view class="j2">元</view><view class="j3">累计获得</view>
+  </view>
+  <view class="js3">
+    <view class="j1">0</view><view class="j2">人</view><view class="j3">成功邀请</view>
+  </view>
+</view>
+<view class="guize">
+  <view class="tou">活动规则</view>
+  <view class="zhengwen">1.邀请好友成为美团外卖新用户，好友领取您送出的红包，并在7天内完成实付金额5元以上的在线支付订单且无退款，无论是否使用领取的红包，您均可获得10元奖励红包；</view>
+  <view class="zhengwen">2.奖励红包会在邀请成功后的48小时内发放入您的账号，您可在美团外卖app-我的-红包中查看；</view>
+  <view class="zhengwen">3.您邀请的好友必须是美团外卖新用户，同一手机号，同一设备，同一支付账号视为同一用户；</view>
+  <view class="zhengwen">4.您邀请的好友需通过美团外卖app或美团app或美团外卖小程序下单，通过其他渠道下单不发放邀请奖励；</view>
+  <view class="zhengwen">5.如有其他疑问请咨询美团外卖客服。</view>
+</view>

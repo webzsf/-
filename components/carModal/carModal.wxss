@@ -1,0 +1,47 @@
+.car-modal{
+  display: block;
+  color: #000;
+  background-color: #fff;
+  position: fixed;
+  bottom: 100rpx;
+  z-index: 5;
+  width: 100%;
+}
+
+.car-modal .car-modal-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+  padding: 20rpx 30rpx;
+  background: #e6e6e6;
+}
+.car-modal-title-left{
+  font-weight: bold;
+  color: #333;
+}
+.car-modal-title-right{
+  display: flex;
+  align-items: center;
+}
+.car-modal-clear{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.car-modal-item{
+  display: flex;
+  align-items: center;
+  padding: 30rpx 20rpx;
+  font-size: 32rpx;
+}
+.item-info{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.modifier{
+  width: 240rpx;
+  display: flex;
+  justify-content: flex-end;
+}
